@@ -39,12 +39,12 @@ Requirements-based testing is easier to plan/carry out than coverage-based testi
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Text…
+Team work was divided evenly in terms of writing the report, designing and writing the tests was done together on two computers for the sake of simplicity.
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Text…
+We faced some challenges when it came to properly importing files from assignment 2 and downloading ECLEmma. However, utilizing slides and other online resources we were able to properly use these resources. By using ECLEmma we were able to learn some interesting insights about testing coverage.
 
 # 10 Comments/feedback on the lab itself
 
-Text…
+The lab was helpful for learning how to properly implement code coverage tools. It also taught how to use code coverage tools to improve current tests and create better tests for the future. 
