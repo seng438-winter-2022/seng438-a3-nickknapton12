@@ -2,19 +2,16 @@
 
 **Lab. Report #3 – Code Coverage, Adequacy Criteria and Test Case Correlation**
 
-| Group \#:      |     |
+| Group \#:      |  5  |
 | -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
-
-(Note that some labs require individual reports while others require one report
-for each group. Please see each lab document for details.)
+| Student Names: |  Nicholas Knapton   |
+|                |  Jacob Artuso   |
+|                |  Brian Kramer  |
+|                |  Colin Christophe   |
 
 # 1 Introduction
 
-Text…
+During our last lab we created tests for the Range and DataUtilities classes. This lab built on the last lab by requiring us to check coverage of these tests. With our new knowledge of how to cover more branches, conditions, and statement we created more tests to improve the code coverage. We were able to check our progress by using ECLEmma.  
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
@@ -38,7 +35,7 @@ Text…
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
-Text…
+Requirements-based testing is easier to plan/carry out than coverage-based testing. This is because you only have to know what the expected output is and not how the function being tested operates. However, this does mean that requirements-based testing may not test the function completely. This is where it is advantageous to use coverage-based testing since you will ensure that every possibly test type is used. 
 
 # 8 A discussion on how the team work/effort was divided and managed
 
