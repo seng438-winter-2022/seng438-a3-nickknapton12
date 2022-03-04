@@ -63,7 +63,8 @@ Du-pair coverage = Du-pairs covered/Total du-pairs = 13/13 * 100% = 100%
 
 # 3 A detailed description of the testing strategy for the new unit test
 
-Using DU pairs we were able to make sure all variables uses were tested. Further, we ensured that all branches were covered using white box testing. We expanded upon our previous tests as they were lacking in coverage. 
+
+Our testing strategy was to look through the functions an create du-pairs for each function. We then check to make sure our test cases would cover each du-pair. Further, we ensured that all branches were covered using white box testing. We expanded upon our previous tests as they were lacking in coverage. 
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
