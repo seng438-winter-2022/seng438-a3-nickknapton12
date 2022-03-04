@@ -15,23 +15,33 @@ During our last lab we created tests for the Range and DataUtilities classes. Th
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
-Text…
+![](media/CCT.png)\
+![](media/CCTT.png)\
+![](media/unknown.png)\
+![](media/RC.png)\
+![](media/RCT1.png)\
+![](media/RCT2.png)\
+![](media/unknown1.png)\
 
 # 3 A detailed description of the testing strategy for the new unit test
 
-Text…
+Using DU pairs we were able to make sure all variables uses were tested. Further, we ensured that all branches were covered using white box testing. We expanded upon our previous tests as they were lacking in coverage. 
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
-Text…
-
+In DataUtilities...
+- equalsTestNullFirst: ensured functionality was working in the equal method when the first inputted array in null. This increased both conditional and statement coverage.
+- calculateColumnTotalTest: adding testing to the overloaded version of the calculateColumnTotal tests allow for the input of a valid row argument. This test increased statement coverage as we had not been testing this method before.
+- calculateColumnTotalTestNull: ensured null value functionality working properly for the calculateColumnTotal overloaded method. This increased our condition coverage.
+In Range...
+- ADD HERE COLIN AND NICK
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
-Text…
+![](media/lineCount.png)\
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-Text…
+We used eclemma, it was useful in terms of 
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
