@@ -32,16 +32,17 @@ Using DU pairs we were able to make sure all variables uses were tested. Further
 In DataUtilities...
 - equalsTestNullFirst: ensured functionality was working in the equal method when the first inputted array in null. This increased both conditional and statement coverage.
 - calculateColumnTotalTest: adding testing to the overloaded version of the calculateColumnTotal tests allow for the input of a valid row argument. This test increased statement coverage as we had not been testing this method before.
-- calculateColumnTotalTestNull: ensured null value functionality working properly for the calculateColumnTotal overloaded method. This increased our condition coverage.
+- calculateColumnTotalTestNull: ensured null value functionality working properly for the calculateColumnTotal overloaded method. This increased our condition coverage.\
 In Range...
 - ADD HERE COLIN AND NICK
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
 ![](media/lineCount.png)\
+![](media/lines.png)\
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-We used eclemma, it was useful in terms of 
+We used eclemma, it was very easy to integrate with eclipse. We had some trouble interpreting the different coverage terms used. We initially had issues with mocking but were able to resolve them. 
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
