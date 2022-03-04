@@ -132,12 +132,14 @@ In Range...
 -  RangeCombineIgnoringNaNTests: This tested the RangeCombineIgnoringNaN function which is a extension of the normal RangeCombine function. This testing increased code coverage by increase statement and conditional coverage that would not have been covered without the NaN version of the combine function.
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
-![](media/lineCount.png)\
-![](media/lines.png)\
+![](media/lineCount.png)
+![](media/lines.png)
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-We used eclemma, it was very easy to integrate with eclipse. It was also very intuative to use and showed helpful results on the coverage. We had some trouble interpreting the different coverage terms used. We initially had issues with mocking but were able to resolve them. 
+We decided to use eclemma, we found it very easy to integrate with eclipse and super easy to get set up and running. It was also very intuative to use and showed helpful results on the coverage including instruction, branch, line, method, type, and complexity coverage. Its easy to start and decent available features are a pro of eclemma. We did initially find it confusing as eclemma named some of the coverages different then what we had known them as though, however by looking at the notes we were able to discover that line and statement coverage are equivalent. Mocking was initially hard to get setup however we were able to get it working, this is a con because it took a bit but atleast it ended up working.
+
+As for the metrics, statement coverage seemed to be a good place to start and by acheiving a high statement coverage alot of the other metrics also tend to increase which is definetly a pro of using statement coverage initially. Branch coverage was helpful to further ensure that all branches in the code where reached and explored. Finally condition coverage was also another helpful metric as it highlighted missed conditions that wouldnt be picked up in the statement or branch coverage metrics. 
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
