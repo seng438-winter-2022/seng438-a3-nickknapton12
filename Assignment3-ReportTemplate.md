@@ -92,7 +92,7 @@ DU-Pairs:
 
     
 ### Testcases and DU-Pairs Covered
-Note the test cases below where done with parameterized testing so all the test cases below where the inputs as described by arg1, arg2, expected.
+Note the test cases below where done with parameterized testing so all the test cases below where the inputs as described by arg1, arg2, expected instead of a test name.
 
 | Test Cases<br/>(arg 1, arg 2, expected) | DU-Pairs covered | DU-Pairs not covered |
 | ---------- | ---------------- | -------------------- | 
