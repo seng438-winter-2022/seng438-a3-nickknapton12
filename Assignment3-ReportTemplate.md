@@ -118,8 +118,7 @@ Du-pair coverage = Du-pairs covered/Total du-pairs = 9/9 * 100% = 100%
 
 # 3 A detailed description of the testing strategy for the new unit test
 
-
-Our testing strategy was to look through the functions an create du-pairs for each function. We then check to make sure our test cases would cover each du-pair. Further, we ensured that all branches were covered using white box testing. We expanded upon our previous tests as they were lacking in coverage. 
+Our testing strategy was to look through the functions and create du-pairs for each function. We then use these pairs to check that our test cases would cover each of them adequately. Further, we then used white box testing methods to test the code coverage of our previously written tests and identify weak points. We will start with writting new tests for the larger functions in hopes that not only we will increase coverage for those specific tests but increase the coverage on functions they relied on as well, thus reducing the number of tests. We also decided to start with statement coverage when we write the new test cases. This is because we observed that by writting tests to increase statement coverage, we would likely greatly increase branch and condition coverage at the same time. However a similar strategy of writing tests to cover branches or conditions would also likely increase the coverage of the others at the same time aswell. Finally we will employ a strategy of writing test cases then running their coverage immediately. This will ensure that the tests we write actually cover their intended statement/branch/condition and dont just bloat our test suite. After writting all the new test cases we will peer review eachothers work. Since we worked in pairs to write these tests, we will review the othe groups work and they will review ours.
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
