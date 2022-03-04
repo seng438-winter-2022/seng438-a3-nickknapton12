@@ -14,14 +14,52 @@
 During our last lab we created tests for the Range and DataUtilities classes. This lab built on the last lab by requiring us to check coverage of these tests. With our new knowledge of how to cover more branches, conditions, and statement we created more tests to improve the code coverage. We were able to check our progress by using ECLEmma.  
 
 # 2 Manual data-flow coverage calculations for X and Y methods
+## DataUtilities.calculateColumnTotal()
+### Data Flow Graph
+![](media/calculateColumnTotalDFG.jpeg)
 
-![](media/CCT.png)\
-![](media/CCTT.png)\
-![](media/unknown.png)\
-![](media/RC.png)\
-![](media/RCT1.png)\
-![](media/RCT2.png)\
-![](media/unknown1.png)\
+### Def-Use Sets and DU-Pairs
+Defs:
+        
+         def(1) = {total, rowCount, r, data, column}
+         def(3) = {n}
+         def(4) = {total}
+         def(5) = {r} |
+      
+Uses:
+
+         use(1) = {data} 
+         use(2) = {r, rowCount}
+         use(3) = {n, data, r, column}
+         use(4) = {total , n}
+         use(5) = {r}
+         use(6) = {total}
+
+DU-Pairs:
+
+        for total  (1, 4) (4, 4) (4, 6) (1, 6) 
+        for data (1, 1) (1, 3)
+        for column (1, 3)
+        for r (1, 2) (5, 5) (5, 2)
+        for n (3, 3) (3, 4)
+        for rowCount (1, 2)
+
+    
+### Testcases and DU-Pairs Covered
+
+| Test Cases | DU-Pairs covered | DU-Pairs not covered |
+| ---------- | ---------------- | -------------------- | 
+| calculateColumnTotalTest | for total  (1, 4) (4, 4) (4,6)<br/>for r (1, 2) (5, 5) (5, 2)<br/>for n (3, 3) (3, 4)<br/>for rowCount (1, 2)<br />for data (1, 1) (1, 3)</br>for column (1, 3) | for total (1, 6) | 
+| calculateColumnTotalTestZero | for total  (1, 4) (4, 4) (4,6)<br/>for r (1, 2) (5, 5) (5, 2)<br/>for n (3, 3) (3, 4)<br/>for rowCount (1, 2)<br/>for data (1, 1) (1, 3)<br/>for column (1, 3) | for total (1, 6) | 
+| calculateColumnTotalTestNegative | for total  (1, 4) (4, 4) (4,6)for r (1, 2) (5, 5) (5, 2)<br/>for n (3, 3) (3, 4)<br/>for rowCount (1, 2)<br/>for data (1, 1) (1, 3)<br/>for column (1, 3) | for total (1, 6) | 
+| calculateColumnTotalTestNoRows | for total (1, 6) <br/>for r (1, 2)<br/>for data (1, 1) | for total  (1, 4) (4, 4) (4,6) <br/>for r  (5, 5) (5, 2)<br/>for n (3, 3) (3, 4)<br/>for rowCount (1, 2)<br/>for column (1, 3)<br/>for data (1, 3) |
+| calculateColumnTotalTestOtherColumn | for total  (1, 4) (4, 4) (4,6)<br/>for r (1, 2) (5, 5) (5, 2)<br/>for n (3, 3) (3, 4)<br/>for rowCount (1, 2)<br/>for data (1, 1) (1, 3)<br/>for column (1, 3) | for total (1, 6) |
+| calculateColumnTotalTestZeroTotal | for total  (1, 4) (4, 4) (4,6)<br/>for r (1, 2) (5, 5) (5, 2)<br/>for n (3, 3) (3, 4)<br/>for rowCount (1, 2)<br/>for data (1, 1) (1, 3)<br/>for column (1, 3) | for total (1, 6) | 
+
+### DU-Pair Coverage
+`
+Du-pair coverage = Du-pairs covered/Total du-pairs = 13/13 * 100% = 100%
+`
 
 # 3 A detailed description of the testing strategy for the new unit test
 
