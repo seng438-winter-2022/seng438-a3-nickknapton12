@@ -143,7 +143,7 @@ As for the metrics, statement coverage seemed to be a good place to start and by
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
-Requirements-based testing is easier to plan/carry out than coverage-based testing. This is because you only have to know what the expected output is and not how the function being tested operates. However, this does mean that requirements-based testing may not test the function completely. This is where it is advantageous to use coverage-based testing since you will ensure that every possibly test type is used. 
+Requirements-based testing is easier to plan/carry out than coverage-based testing. This is because you only have to know what the expected output is and not how the function being tested operates. However, this does mean that requirements-based testing may not test the function completely. This is where it is advantageous to use coverage-based testing since you will ensure that every possibly test type is used. It may be usefull to deploy a combination of both coveraged based testing as well as requirements based as you get a little bit of both worlds. This is because you still can make sure real requirements are tested aswell as using coverage tools to ensure that the whole SUT is tested thoroughly.
 
 # 8 A discussion on how the team work/effort was divided and managed
 
