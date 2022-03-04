@@ -61,6 +61,61 @@ DU-Pairs:
 Du-pair coverage = Du-pairs covered/Total du-pairs = 13/13 * 100% = 100%
 `
 
+## Range.combine()
+### Data Flow Graph
+![](media/combineDFG.jpeg)
+
+### Def-Use Sets and DU-Pairs
+Defs:
+        
+         def(1) = {range1,range2}
+         def(6) = {l,u, new Range()}
+
+      
+Uses:
+
+        use(2) = {range1} 
+        use(3) = {range2}
+        use(4) = {range2}
+        use(5) = {range1}
+        use(6) = {range1, range2, l , u, new Range()}
+
+
+DU-Pairs:
+
+        for range1 (1, 2) (1, 5) (1, 6)
+        for range2 (1, 3) (1, 4) (1, 6)
+        for l (6, 6)
+        for u (6, 6)
+        for new Range() (6, 6)
+
+
+    
+### Testcases and DU-Pairs Covered
+Note the test cases below where done with parameterized testing so all the test cases below where the inputs as described by arg1, arg2, expected instead of a test name.
+
+| Test Cases<br/>(arg 1, arg 2, expected) | DU-Pairs covered | DU-Pairs not covered |
+| ---------- | ---------------- | -------------------- | 
+| new Range(0,2), new Range(1,2), new Range(0,2) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) |
+| new Range(1,2), new Range(0,2), new Range(0,2) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) |
+| new Range(0,2), new Range(0,1), new Range(0,2) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) |
+| new Range(0,1), new Range(0,2), new Range(0,2) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) |
+| new Range(0,2), new Range(2,4), new Range(0,4) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) |
+| new Range(0,1), new Range(3,4), new Range(0,4) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) |
+| new Range(-1,0), new Range(0,1), new Range(-1,1) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) |
+| new Range(0,1), new Range(0,1), new Range(0,1) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) | 
+| new Range(0,1), null, new Range(0,1) | for range1 (1, 2) ( 1, 5)<br/>for range2 (1, 4) | for range1 (1, 6)<br/>for range2 (1,3) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) |
+| null, new Range(0,1), new Range(0,1) | for range1 (1, 2)<br/>for range2 (1, 3) | for range1 (1, 5) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | 
+| null, null, null | for range1 (1, 2)<br/>for range2 (1, 3) | for range1 (1, 5) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) |
+| new Range(0,0), new Range(0,0), new Range(0,0) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) |
+| new Range(0,50000), new Range(-50000,0), new Range(-50000,50000) | for range1 (1, 2) (1, 6)<br/>for range2 (1, 4) (1, 6)<br/>for l (6, 6)<br/>for u (6, 6)<br/>for new Range() (6, 6) | for range1 (1, 5) <br/>for range2 (1, 3) |
+
+
+### DU-Pair Coverage
+`
+Du-pair coverage = Du-pairs covered/Total du-pairs = 9/9 * 100% = 100%
+`
+
 # 3 A detailed description of the testing strategy for the new unit test
 
 
