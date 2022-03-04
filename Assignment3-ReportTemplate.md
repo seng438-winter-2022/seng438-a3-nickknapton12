@@ -147,7 +147,7 @@ Requirements-based testing is easier to plan/carry out than coverage-based testi
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Team work was divided evenly at the start, we decided to employ pair programming to write the tests and measure coverage. The pairs were 1) Jacob, Brain and 2) Nick, Colin. We each chose a class to write the test cases on, pair 1 wrote tests for the Range class and pair 2 wrote tests for the DataUtilities class. Each pair then reviewed the other pairs work to check for quality and proper techniques. After the test suite was done, the report was divided between the two pairs then further divided within the group accordingly. 
+Team work was divided evenly at the start, we decided to employ pair programming to write the tests and measure coverage. The pairs were 1) Nick, Colin and 2) Jacob, Brain. We each chose a class to write the test cases on, pair 1 wrote tests for the Range class and pair 2 wrote tests for the DataUtilities class. Each pair then reviewed the other pairs work to check for quality and proper techniques. After the test suite was done, the report was divided between the two pairs then further divided within the group accordingly. 
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
