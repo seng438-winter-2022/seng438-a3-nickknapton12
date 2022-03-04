@@ -147,12 +147,12 @@ Requirements-based testing is easier to plan/carry out than coverage-based testi
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Team work was divided evenly in terms of writing the report, designing and writing the tests was done together on two computers for the sake of simplicity.
+Team work was divided evenly at the start, we decided to employ pair programming to write the tests and measure coverage. The pairs were 1) Nick, Colin and 2) Jacob, Brain. We each chose a class to write the test cases on, pair 1 wrote tests for the Range class and pair 2 wrote tests for the DataUtilities class. Each pair then reviewed the other pairs work to check for quality and proper techniques. After the test suite was done, the report was divided between the two pairs then further divided within the group accordingly. 
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-We faced some challenges when it came to properly importing files from assignment 2 and downloading ECLEmma. However, utilizing slides and other online resources we were able to properly use these resources. By using ECLEmma we were able to learn some interesting insights about testing coverage.
+We faced some challenges when it came to properly importing files from assignment 2 and downloading ECLEmma. However, utilizing slides and other online resources we were able to properly use these resources. By using ECLEmma we were able to learn some interesting insights about testing coverage and how we can ensure that our tests in the future properly cover the code. 
 
 # 10 Comments/feedback on the lab itself
 
-The lab was helpful for learning how to properly implement code coverage tools. It also taught how to use code coverage tools to improve current tests and create better tests for the future. 
+The lab was helpful for learning how to properly implement code coverage tools. It also taught how to use code coverage tools to improve current tests and create better tests for the future. We feel better prepared for testing our own code in the future and code we write while on the job.
