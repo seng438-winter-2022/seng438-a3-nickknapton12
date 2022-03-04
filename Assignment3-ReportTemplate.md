@@ -138,7 +138,7 @@ In Range...
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-We used eclemma, it was very easy to integrate with eclipse. We had some trouble interpreting the different coverage terms used. We initially had issues with mocking but were able to resolve them. 
+We used eclemma, it was very easy to integrate with eclipse. It was also very intuative to use and showed helpful results on the coverage. We had some trouble interpreting the different coverage terms used. We initially had issues with mocking but were able to resolve them. 
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
