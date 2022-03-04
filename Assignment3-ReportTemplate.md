@@ -122,12 +122,12 @@ Our testing strategy was to look through the functions and create du-pairs for e
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
-In DataUtilities...
+## In DataUtilities
 - equalsTestNullFirst: ensured functionality was working in the equal method when the first inputted array in null. This increased both conditional and statement coverage.
 - calculateColumnTotalTest: adding testing to the overloaded version of the calculateColumnTotal tests allow for the input of a valid row argument. This test increased statement coverage as we had not been testing this method before.
 - calculateColumnTotalTestNull: ensured null value functionality working properly for the calculateColumnTotal overloaded method. This increased our condition coverage.
 
-In Range...
+## In Range
 - RangeIntersectsDoubleTest: Tested to ensure that the intersect function worked when given two doubles and a range. We used parameratized testing and selected inputs with expected values that we deemed would increase code coverage. We did this by examining the Range.intersects method and adding tests to cover all the branches, statements and conditions. This increased the conditional, statement, and branch coverage to high levels each as opposed to the previous 0% (this function was not tested in assignment 2 so was 0% initially).
 -  RangeCombineIgnoringNaNTests: This tested the RangeCombineIgnoringNaN function which is a extension of the normal RangeCombine function. We used parameterized testing and selected inputs with expected values that we deemed would increase code coverage. We did this by firstly looking at the Range.combineIgnoringNaN and developing tests to cover all the statements, branhces, and conditions. This testing increased code coverage by increasing statement, branch, and conditional coverage that would not have been covered without the NaN version of the combine function.
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
