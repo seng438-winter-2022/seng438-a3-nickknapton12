@@ -75,7 +75,7 @@ In DataUtilities...
 
 In Range...
 - RangeIntersectsDoubleTest: Tested to ensure that the intersect function worked when given two doubles and a range. This increase conditional, statement, and branch cover as this function was not tested in assignment 2.
--RangeCombineIgnoringNaNTests: This tested the RangeCombineIgnoringNaN function which is a extension of the normal RangeCombine function. This testing increased code coverage by increase statement and conditional coverage that would not have been covered without the NaN version of the combine function.
+-  RangeCombineIgnoringNaNTests: This tested the RangeCombineIgnoringNaN function which is a extension of the normal RangeCombine function. This testing increased code coverage by increase statement and conditional coverage that would not have been covered without the NaN version of the combine function.
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
 ![](media/lineCount.png)\
