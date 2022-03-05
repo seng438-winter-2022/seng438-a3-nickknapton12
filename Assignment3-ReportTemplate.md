@@ -132,8 +132,10 @@ Our testing strategy was to look through the functions and create du-pairs for e
 -  RangeCombineIgnoringNaNTests: This tested the RangeCombineIgnoringNaN function which is a extension of the normal RangeCombine function. We used parameterized testing and selected inputs with expected values that we deemed would increase code coverage. We did this by firstly looking at the Range.combineIgnoringNaN and developing tests to cover all the statements, branhces, and conditions. This testing increased code coverage by increasing statement, branch, and conditional coverage that would not have been covered without the NaN version of the combine function.
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
-![](media/lineCount.png)
-![](media/lines.png)
+![](media/lineCount.png)\
+![](media/lines.png)\
+![](media/image1.png)\
+![](media/image2.png)\
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
