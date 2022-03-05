@@ -136,12 +136,16 @@ Our testing strategy was to look through the functions and create du-pairs for e
 ![](media/lines.png)\
 ![](media/image1.png)\
 ![](media/image2.png)\
+![](media/image3.png)\
+![](media/image4.png)
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
 We decided to use eclemma, we found it very easy to integrate with eclipse and super easy to get set up and running. It was also very intuative to use and showed helpful results on the coverage including instruction, branch, line, method, type, and complexity coverage. Its easy to start and decent available features are a pro of eclemma. We did initially find it confusing as eclemma named some of the coverages different then what we had known them as though, however by looking at the notes we were able to discover that line and statement coverage are equivalent. Mocking was initially hard to get setup however we were able to get it working, this is a con because it took a bit but atleast it ended up working. We didnt experience any crashing of the program and didnt have any problems with integration of any other tools (other then mocking).
 
 As for the metrics, statement coverage seemed to be a good place to start and by acheiving a high statement coverage alot of the other metrics also tend to increase which is definetly a pro of using statement coverage initially. Branch coverage was helpful to further ensure that all branches in the code where reached and explored. Finally condition coverage was also another helpful metric as it highlighted missed conditions that wouldnt be picked up in the statement or branch coverage metrics. 
+
+We also tried to use CodeCover for condition coverage, but were unable to make it work. Instead we have included method coverage above.
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
